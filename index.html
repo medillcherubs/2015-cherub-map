@@ -5,6 +5,45 @@
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
 <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
 
+<style>
+body {
+    margin:0;
+    padding:0;
+}
+
+#map {
+    width:800px; height:400px; margin-bottom: 10px;
+}
+
+#asia-map {
+    width:264px; height: 200px; margin: auto;
+}
+
+#turkey-map {
+    width:264px; height: 200px; margin: auto;
+}
+
+#paraguay-map {
+  width:264px; height: 200px; margin: 0 auto;
+}
+
+.inline-block-center {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.inline-block-center div {
+  display: inline-block;
+  text-align: left;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+</style>
+
 <main class="inline-block-center">
 <div id='map'></div>
 <div id='asia-map'></div>
@@ -47,41 +86,3 @@ L.mapbox.featureLayer('medillcherubs.n11d5h37').on('ready', function (e) {
 });
 </script>
 
-<style>
-body {
-    margin:0;
-    padding:0;
-}
-
-#map {
-    width:800px; height:400px; margin-bottom: 20px;
-}
-
-#asia-map {
-    width:264px; height: 200px; margin: auto;
-}
-
-#turkey-map {
-    width:264px; height: 200px; margin: auto;
-}
-
-#paraguay-map {
-  width:264px; height: 200px; margin: 0 auto;
-}
-
-.inline-block-center {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.inline-block-center div {
-  display: inline-block;
-  text-align: left;
-}
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-}
-</style>
